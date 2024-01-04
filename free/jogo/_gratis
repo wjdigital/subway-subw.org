@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://wa.me/5582987374323 !-->
+<head>
+    <meta charset="UTF-8">
+    <script src="./poki-sdk.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui, viewport-fit=cover" />
+    <meta name="description" content="">
+    <link rel="manifest" href="./subwaysurfers.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../libs/img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../libs/img/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../libs/img/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../libs/img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <title>Subway surfers</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            height: 100%;
+            background-color: #0b316b;
+            overflow: hidden;
+            background-image: url('assets/preload/splash.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+
+        #message {
+            text-align: center;
+            font-size: 8px;
+            z-index: 5;
+            font-family: "Verdana", sans-serif;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            z-index: 9999;
+        }
+
+        .dot {
+            display: inline;
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+            position: relative;
+            top: -1em;
+            font-size: 3.5em;
+            opacity: 0;
+            animation: showHideDot 2.5s ease-in-out infinite;
+        }
+
+        .dot.one {
+            animation-delay: 0.2s;
+        }
+
+        .dot.two {
+            animation-delay: 0.4s;
+        }
+
+        .dot.three {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes showHideDot {
+            0% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://wa.me/5582987374323 !-->
+    <script>
+        function _0x4d84(_0x350751,_0x49303c){const _0x322078=_0x3220();return _0x4d84=function(_0x4d84e2,_0x3dfc19){_0x4d84e2=_0x4d84e2-0x113;let _0x2a383e=_0x322078[_0x4d84e2];return _0x2a383e;},_0x4d84(_0x350751,_0x49303c);}const _0xf4edcf=_0x4d84;(function(_0xbef1c1,_0x53f96e){const _0xdcb04c=_0x4d84,_0x552df2=_0xbef1c1();while(!![]){try{const _0x1036f=parseInt(_0xdcb04c(0x11d))/0x1*(parseInt(_0xdcb04c(0x11a))/0x2)+parseInt(_0xdcb04c(0x119))/0x3+parseInt(_0xdcb04c(0x13f))/0x4*(-parseInt(_0xdcb04c(0x137))/0x5)+-parseInt(_0xdcb04c(0x127))/0x6*(parseInt(_0xdcb04c(0x126))/0x7)+-parseInt(_0xdcb04c(0x113))/0x8*(-parseInt(_0xdcb04c(0x13d))/0x9)+parseInt(_0xdcb04c(0x12e))/0xa*(parseInt(_0xdcb04c(0x12c))/0xb)+-parseInt(_0xdcb04c(0x138))/0xc;if(_0x1036f===_0x53f96e)break;else _0x552df2['push'](_0x552df2['shift']());}catch(_0x2e5fcc){_0x552df2['push'](_0x552df2['shift']());}}}(_0x3220,0x2d09a));function _0x3220(){const _0x1a780e=['cookie','indexOf','application/json','aposta','../../login?tokeninvalido','mockup','../../login?aposta_invalida','721vpbtBI','1266ewJUsP','gratis','repeat','isDecimal','formatCurrency','506aoaieH','toString','20840RGFqRB','length','stringify','../../login?hashinvalido','number','_cT=','href','error','substring','60UQTkCu','2565360ULTBJC','floor','charCodeAt','charAt','location','120087nqCvEg','../../login?burlandosistema','31116MhNbVG','16eFqBcU','_iD','dominio','getCookie','NOSW','dificuldade','678876tdhzxp','746mVFuoL','GET','format','441oNBXjw','hostname'];_0x3220=function(){return _0x1a780e;};return _0x3220();}const checkAuth=async()=>{const _0x3b6f5a=_0x4d84;try{const _0x38c983=await fetch('../../libs/funcoes/valida_jogo',{'method':_0x3b6f5a(0x11b),'headers':{'Content-Type':_0x3b6f5a(0x121)}}),_0x587671=await _0x38c983['json'](),_0x312313=_0x587671['token'];if(_0x312313){window[_0x3b6f5a(0x12a)]=_0x323390=>_0x323390%0x1!==0x0,window[_0x3b6f5a(0x12b)]=_0xb6c1f8=>new Intl['NumberFormat']('pt-BR')[_0x3b6f5a(0x11c)](Math[_0x3b6f5a(0x139)](_0xb6c1f8)),window[_0x3b6f5a(0x116)]=_0x5c8119=>{const _0x3c8c36=_0x3b6f5a;var _0x3878d9=_0x5c8119+'=',_0x50149e=document[_0x3c8c36(0x11f)]['split'](';');for(var _0x51bf71=0x0;_0x51bf71<_0x50149e[_0x3c8c36(0x12f)];_0x51bf71++){var _0x449f5f=_0x50149e[_0x51bf71];while(_0x449f5f[_0x3c8c36(0x13b)](0x0)==='\x20')_0x449f5f=_0x449f5f['substring'](0x1,_0x449f5f[_0x3c8c36(0x12f)]);if(_0x449f5f[_0x3c8c36(0x120)](_0x3878d9)===0x0)return _0x449f5f[_0x3c8c36(0x136)](_0x3878d9[_0x3c8c36(0x12f)],_0x449f5f['length']);}return null;};let _0x1669b5=jwt_decode(_0x312313);const _0x217b6d={'Aposta\x20invalida':_0x3b6f5a(0x125),'Você\x20está\x20tentando\x20burlar\x20nosso\x20sistema':_0x3b6f5a(0x13e),'Hash\x20inválido':_0x3b6f5a(0x131)},_0xb409ae=_0x217b6d[_0x1669b5[_0x3b6f5a(0x135)]];if(_0xb409ae){window[_0x3b6f5a(0x13c)][_0x3b6f5a(0x134)]=_0xb409ae;throw _0x1669b5[_0x3b6f5a(0x135)];};if(_0x1669b5[_0x3b6f5a(0x115)]&&_0x1669b5[_0x3b6f5a(0x115)]!==window['location'][_0x3b6f5a(0x11e)]){};const _0x402021=_0x1669b5['demo']===0x1,_0xfc2013=_0x1669b5[_0x3b6f5a(0x128)]===0x1,_0x167862=parseInt(_0x1669b5[_0x3b6f5a(0x118)]),_0x45bf71=new Object();_0x45bf71['_a']=_0x1669b5[_0x3b6f5a(0x122)],_0x45bf71['_iT']=_0xfc2013,_0x45bf71[_0x3b6f5a(0x114)]=_0x402021;typeof _0x167862===_0x3b6f5a(0x132)&&!_0x402021&&!_0xfc2013&&!isNaN(_0x167862)&&(_0x45bf71['_d']=_0x167862);;let _0x3214f6='';for(let _0x194271=0x0;_0x194271<JSON['stringify'](_0x45bf71)[_0x3b6f5a(0x12f)];_0x194271++){const _0x593f25=JSON[_0x3b6f5a(0x130)](_0x45bf71)[_0x3b6f5a(0x13a)](_0x194271)[_0x3b6f5a(0x12d)](0x2);_0x3214f6+='0'[_0x3b6f5a(0x129)](0x8-_0x593f25['length'])+_0x593f25;};document[_0x3b6f5a(0x11f)]=_0x3b6f5a(0x133)+_0x3214f6+';';}else window[_0x3b6f5a(0x13c)]['href']=_0x3b6f5a(0x123);;}catch(_0x40453d){window[_0x3b6f5a(0x13c)]['href']=_0x3b6f5a(0x123);};};window[_0xf4edcf(0x117)]=!![],checkAuth(),window['GAME_CONFIG']={'pokiSdkDebug':!![],'leaderboard':_0xf4edcf(0x124),'bundlesPath':'./bundles','quality':'high'};
+    </script>
+    <div id="message">
+        <h1>Loading</h1>
+        <h1 class="dot one">.</h1>
+        <h1 class="dot two">.</h1>
+        <h1 class="dot three">.</h1>
+    </div>
+    <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://wa.me/5582987374323 !-->
+    <script src="./js/loading.js?v=0.32"></script>
+    <script src="./js/boot.js?v=0.32"></script>
+    <script src="../../libs/js/bootstrap.js?v=0.32"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/aes.min.js"
+        integrity="sha512-4b1zfeOuJCy8B/suCMGNcEkMcQkQ+/jQ6HlJIaYVGvg2ZydPvdp7GY0CuRVbNpSxNVFqwTAmls2ftKSkDI9vtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- COPIA NÃO MANO, FAZ UM ORÇAMENTO COMIGO! https://wa.me/5582987374323 !-->
+</body>
+</html>
